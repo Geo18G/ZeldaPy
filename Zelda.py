@@ -1,7 +1,7 @@
 import pygame, sys
-from configuraciones import *
-from depurar import debug
-from nivel import Level
+from config import *
+from debug import debug
+from level import Level
 
 class Game:
     def __init__(self):
@@ -18,6 +18,7 @@ class Game:
         while True:
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
+
                     pygame.quit()
                     sys.exit()
             
